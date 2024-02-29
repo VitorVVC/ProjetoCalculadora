@@ -2,6 +2,9 @@ const previusOperationText = document.querySelector("#previous-operation");
 const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll('#buttons-container button');
 
+function verifyStringEmpty(texto) {
+    if (texto.length === 0) return true;
+}
 
 class Calculator {
     constructor(previusOperationText, currentOperationText) {
@@ -13,6 +16,10 @@ class Calculator {
     addDigit(digit) {
         // Check if current operation already has a dot
         if (digit === "." && this.currentOperationText.innerText.includes(".")) {
+            return;
+        }
+        // Checks if the user entered a period and if the period is the first digit
+        if (digit == "." && verifyStringEmpty(this.currentOperationText.innerText)) {
             return;
         }
 
@@ -119,7 +126,7 @@ class Calculator {
     }
 
     // Process an operation
-    processEqualOperator(){
+    processEqualOperator() {
         const operation = previusOperationText.innerText.split(" ")[1];
         this.processOperation(operation);
     }
