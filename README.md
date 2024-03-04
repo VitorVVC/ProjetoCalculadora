@@ -29,6 +29,8 @@
 
 
 ## Visualização | Preview
+<img width="1468" alt="Preview-Calc" src="https://github.com/VitorVVC/ProjetoCalculadora/assets/144281355/9d5775da-a0c3-40ff-a3ae-5b116ad81b50">
+
 
 # Projeto Calculadora | Calculator Project
 
