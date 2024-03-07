@@ -35,4 +35,5 @@
 ## Atualizações recomendadas | Recommended updates
 [PT-BR]
 - Permitir o usuário entrar com APENAS o negativo e sendo seguido de um numero, somente assim pode ser válido(Botão para isso).
-- Inserção de novos botões para diversificar as funcionalidades da calculadora
+- Inserção de novos botões para diversificar as funcionalidades da calculadora.
+- Adicionar possibilidade de entrar com valor negativo.
